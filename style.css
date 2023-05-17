@@ -3,6 +3,88 @@
   initial-value: 0deg;
   inherits: false;
 }
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Righteous', cursive;
+  
+}
+.caja-padre{
+  width: 40%;
+  min-width: 590px;
+  padding: 10px;
+  /* position: absolute;
+  transform: translate(-50%, -50%);
+  left: 25%;
+  top: 105%; */
+  background:linear-gradient(450deg,#8300b3,#ff07ea);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px;
+  color: white;
+
+}
+.skills:not(:last-child){
+  margin-bottom: 30px;
+}
+.detalles{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu{
+  position: relative;
+  border: 1px solid cyan;
+  border-radius: 20px;
+}
+.menu div{
+  position: relative;
+  width: 0;
+  height: 8px;
+  border-radius: 10px;
+  background-color: cyan;
+}
+/*ANIMACION SKILLS*/
+#html-menu{
+  animation: html-barra 2s forwards;
+}
+@keyframes html-barra{
+  100%{
+    width: 90%;
+  }
+}
+#css-menu{
+  animation: css-barra 2s forwards;
+}
+@keyframes css-barra{
+  100%{
+    width: 85%;
+  }
+}
+#jscript-menu{
+  animation: jscript-barra 2s forwards;
+}
+@keyframes jscript-barra{
+  100%{
+    width: 20%;
+  }
+}
+#jav-menu{
+  animation: jav-barra 2s forwards;
+}
+@keyframes jav-barra{
+  100%{
+    width: 60%;
+  }
+}
+#pyth-menu{
+  animation: pyth-barra 2s forwards;
+}
+@keyframes pyth-barra{
+  100%{
+    width: 80%;
+  }
+}
 
 header {
   display: flex;
@@ -112,6 +194,9 @@ header {
   background: #3500310b;
   flex-direction: row;
   flex-wrap: wrap;
+}
+ul{
+  list-style: none;
 }
 #derecha {
   display: flex;
